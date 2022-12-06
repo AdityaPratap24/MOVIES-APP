@@ -1,3 +1,7 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +39,104 @@
   to {
     transform: rotate(360deg);
   }
+}
+.banner-img{
+  height: 70vh;
+  width: 100%;
+}
+.banner-card{
+  position: relative;
+}
+.banner-title{
+  position: absolute;
+  top : 25vh;
+  left: 5vw;
+  color: rgb(92, 255, 17);
+  font-size: 15px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+.trending{
+  position: relative;
+  top: 10px;
+  text-align: center;
+}
+.movies-list{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.movie-card{
+  width:20vw;
+  margin:1rem;
+  color:white;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+.movie-title{
+  position: absolute;
+  top:1rem;
+  left:1rem;
+}
+
+.movie-button{
+  position: absolute;
+  top:82%;
+}
+
+.button-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.favourite-list{
+  padding: 3rem;
+}
+
+.favourite-table{
+  padding: 3rem;
+}
+
+/* upto */
+@media screen and (max-width:400px) { 
+  .banner-card{
+    height:25vh;
+  }
+
+  .banner-img{
+    height:30vh;
+  }
+
+  .banner-title{
+    top:10vh;
+    left:5vw;
+  }
+
+  .banner-text{
+    top:15vh;
+    left:5vw;
+  }
+
+  .movie-card{
+    width: 40vw;
+    margin: 0.1rem;
+  }
+  .movie-button{
+    width: 80%;
+  }
+  .movie-img{
+    width: 40vw;
+  }
+
+  
+  
 }
